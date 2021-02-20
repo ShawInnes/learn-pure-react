@@ -1,0 +1,24 @@
+
+.buttons {
+    /*border: 1px solid red;*/
+    margin-top: 10px;
+    margin-left: 2px;
+    font-size: 1.4em;
+    color: #aab8c2;
+}
+
+.reply-button {
+    width: 80px !important;
+}
+
+.retweet-button {
+    width: 80px !important;
+}
+
+.like-button {
+    width: 80px !important;
+}
+
+.more-options-button {
+    width: 80px !important;
+}
