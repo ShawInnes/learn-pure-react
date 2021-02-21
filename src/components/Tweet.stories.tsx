@@ -1,6 +1,6 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
-import { Tweet, TweetProps, UserContext } from './Tweet';
+import {Meta, Story} from '@storybook/react';
+import {Tweet, TweetProps, UserContext} from './Tweet';
 
 export default {
   title: 'Tweet',
@@ -8,10 +8,11 @@ export default {
 } as Meta;
 
 const TweetTemplate: Story<TweetProps> = (args) => (
-  <UserContext.Provider value="Shaw">
-    <Tweet {...args} />
-  </UserContext.Provider>
+    <UserContext.Provider value="Shaw">
+      <Tweet {...args} />
+    </UserContext.Provider>
 );
+
 export const tweet = TweetTemplate.bind({});
 tweet.args = {
   tweet: {

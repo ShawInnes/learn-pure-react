@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import './Tweet.css';
 import './Avatar.css';
 import './Message.css';
 import './Author.css';

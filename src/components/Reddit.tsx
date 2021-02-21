@@ -1,7 +1,6 @@
 import React, {
   BaseSyntheticEvent, FC, useState,
 } from 'react';
-import './Tweet.css';
 import './Avatar.css';
 import './Message.css';
 import './Author.css';

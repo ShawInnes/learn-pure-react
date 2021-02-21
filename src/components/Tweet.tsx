@@ -1,5 +1,6 @@
 import React, {createContext, FC, useContext, useEffect} from 'react';
-import './Tweet.css';
+import styled from 'styled-components';
+
 import './Avatar.css';
 import './Author.css';
 import './Time.css';
@@ -27,6 +28,18 @@ export interface TweetProps {
   tweet: TweetModel;
 }
 
+export const StyledTweet = styled.div`
+  border: 1px solid ${(props) => props.theme.primaryColor};
+  background: ${(props) => props.theme.backgroundColor};
+  width: 564px;
+  min-height: 68px;
+  padding: 10px;
+  display: flex;
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+`;
+
 export const Tweet: FC<TweetProps> = ({tweet}) => {
   const user = useContext(UserContext);
 
@@ -35,7 +48,7 @@ export const Tweet: FC<TweetProps> = ({tweet}) => {
   }, [user]);
 
   return (
-    <div className="tweet">
+    <StyledTweet>
       <Avatar hash={tweet.gravatar}/>
       <div className="content">
         <Author {...tweet.author} />
@@ -48,7 +61,7 @@ export const Tweet: FC<TweetProps> = ({tweet}) => {
         </div>
         <Buttons/>
       </div>
-    </div>
+    </StyledTweet>
   );
 };
 

@@ -12,6 +12,7 @@ module.exports = {
         }
       }
     },
-    '@storybook/addon-essentials'
+    '@storybook/addon-essentials',
+    'storybook-addon-styled-component-theme/dist/register'
   ]
 };
