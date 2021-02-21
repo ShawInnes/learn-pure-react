@@ -1,24 +1,16 @@
 import React from 'react';
+import { Meta, Story } from '@storybook/react';
 import {
-    Avatar,
-    Tweet,
-    Author,
-    Buttons,
-    AuthorProps,
-    TweetModel,
-    TweetProps,
-    IconButton,
-    IconButtonProps
-} from "./Tweet";
-import {Meta, Story} from "@storybook/react";
+  IconButton,
+  IconButtonProps,
+} from './Tweet';
 
 export default {
-    title: 'IconButton',
-    component: IconButton,
+  title: 'IconButton',
+  component: IconButton,
 } as Meta;
 
-
-const Template: Story<IconButtonProps> = (args) => <IconButton {...args} ><em>This is the Text</em></IconButton>;
+const Template: Story<IconButtonProps> = (args) => (<IconButton {...args}><em>This is the Text</em></IconButton>);
 export const tweet = Template.bind({});
 tweet.args = {
 };
